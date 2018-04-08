@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FbMessengerLayout</string>
+    <string name="simple_text_name">In God We Trust</string>
+    <string name="fragment_one_title">Fragment One</string>
+    <string name="fragment_two_title">Fragment Two</string>
+    <string name="fragment_three_title">Fragment Three</string>
+
+</resources>
