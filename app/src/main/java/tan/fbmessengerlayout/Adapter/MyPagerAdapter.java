@@ -6,8 +6,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.widget.TextView;
 
+import tan.fbmessengerlayout.Fragment.FragmentFive_;
+import tan.fbmessengerlayout.Fragment.FragmentFour_;
 import tan.fbmessengerlayout.Fragment.FragmentOne;
 import tan.fbmessengerlayout.Fragment.FragmentOne_;
+import tan.fbmessengerlayout.Fragment.FragmentSix_;
 import tan.fbmessengerlayout.Fragment.FragmentThree;
 import tan.fbmessengerlayout.Fragment.FragmentThree_;
 import tan.fbmessengerlayout.Fragment.FragmentTwo;
@@ -24,7 +27,7 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 6;
     }
 
     @Override
@@ -36,6 +39,12 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
                 return new FragmentTwo_();
             case 2:
                 return new FragmentThree_();
+            case 3:
+                return new FragmentFour_();
+            case 4:
+                return new FragmentFive_();
+            case 5:
+                return new FragmentSix_();
             default:
                 return null;
         }
@@ -45,11 +54,17 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position){
             case 0:
-                return "abc";
+                return "Home";
             case 1:
-                return "def";
+                return "Top Artists";
             case 2:
-                return "123";
+                return "Top Albums";
+            case 3:
+                return "New Release";
+            case 4:
+                return "Top Songs";
+            case 5:
+                return "Award";
             default:
                 return null;
         }
