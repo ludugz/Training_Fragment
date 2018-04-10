@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
+    <color name="color_primary_black">#000</color>
+    <color name="color_black">#302b2b</color>
+    <color name="color_white">#FFF</color>
+    <color name="color_grey">#817e7e</color>
+    <color name="color_little_grey">#c1b1b1</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#bdbfa4</color>
     <color name="fragment_background">#bfefe9</color>
     <color name="recyclerview_background">#e965e4</color>
-
+    <color name="test_colour">#f4dd0a</color>
 
 </resources>

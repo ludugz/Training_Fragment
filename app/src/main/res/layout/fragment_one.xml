@@ -1,23 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/fragment_background">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_fr_one"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/simple_text_name"
-        android:textSize="20sp" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="30dp"
-        android:background="@color/recyclerview_background"
-        android:padding="10dp" />
+        android:layout_height="match_parent" />
 
 </FrameLayout>
