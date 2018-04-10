@@ -9,15 +9,14 @@ import android.support.v7.widget.Toolbar;
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import tan.fbmessengerlayout.Adapter.MyPagerAdapter;
 
 @EActivity(R.layout.activity_main)
 public class MainActivity extends AppCompatActivity {
-    public static List<Integer> dataList = new ArrayList<>();
+
+   public static List<Integer> dataList = new ArrayList<>();
 
     @ViewById(R.id.view_pager)
     ViewPager mViewPager;
@@ -31,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
     @AfterViews
     void updateFragment() {
-
 
         setSupportActionBar(mToolBar);
         // Update DataList for FragmentOne
