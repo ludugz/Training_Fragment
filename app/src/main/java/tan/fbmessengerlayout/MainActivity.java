@@ -4,6 +4,8 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
@@ -13,6 +15,7 @@ import tan.fbmessengerlayout.Adapter.MyPagerAdapter;
 
 @EActivity(R.layout.activity_main)
 public class MainActivity extends AppCompatActivity {
+
    public static List<Integer> dataList = new ArrayList<>();
 
     @ViewById(R.id.view_pager)
@@ -21,10 +24,14 @@ public class MainActivity extends AppCompatActivity {
     @ViewById(R.id.tab_layout)
     TabLayout mTabLayout;
 
+    @ViewById(R.id.tool_bar)
+    Toolbar mToolBar;
+
 
     @AfterViews
     void updateFragment() {
 
+        setSupportActionBar(mToolBar);
         // Update DataList for FragmentOne
         updateDataList();
         // Handle ViewPager
@@ -33,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         mTabLayout.setupWithViewPager(mViewPager);
 
     }
+
     private void updateDataList() {
         dataList.add(R.drawable.album_name_1);
         dataList.add(R.drawable.album_name_3);

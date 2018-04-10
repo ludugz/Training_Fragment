@@ -1,26 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/color_black"
-    android:orientation="vertical"
-    tools:context="tan.fbmessengerlayout.MainActivity">
+    android:layout_height="match_parent">
 
-    <android.support.design.widget.TabLayout
-        app:tabTextColor="@color/color_grey"
-        app:tabSelectedTextColor="@color/color_white"
-        android:id="@+id/tab_layout"
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="75dp"
-        app:tabGravity="fill"
-        app:tabMinWidth="100dp"
-        app:tabMode="scrollable" />
+        android:layout_height="wrap_content"
+        android:background="@color/color_black"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed|snap"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="@string/simple_text_name"
+            app:titleTextColor="@color/color_little_grey" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:tabGravity="fill"
+            app:tabMinWidth="100dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/color_white"
+            app:tabTextColor="@color/color_grey" />
+
+    </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
