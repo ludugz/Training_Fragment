@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
     void updateFragment() {
         // Handle Toolbar
         setSupportActionBar(mToolBar);
-//        if (getSupportActionBar() != null) {
-//            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        }
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         // Update DataList for FragmentOne
         updateDataList();

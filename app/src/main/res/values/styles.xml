@@ -3,8 +3,6 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="windowNoTitle">true</item>
-        <item name="windowActionBar">true</item>
         <item name="colorPrimary">@color/color_black</item>
         <item name="colorPrimaryDark">@color/color_primary_black</item>
         <item name="colorAccent">@color/colorAccent</item>
