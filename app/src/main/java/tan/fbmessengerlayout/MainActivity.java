@@ -1,5 +1,6 @@
 package tan.fbmessengerlayout;
 
+import android.graphics.Color;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -42,8 +43,6 @@ public class MainActivity extends AppCompatActivity {
         PagerAdapter pagerAdapter = new MyPagerAdapter(getSupportFragmentManager());
         mViewPager.setAdapter(pagerAdapter);
         mTabLayout.setupWithViewPager(mViewPager);
-
-
 
     }
 

@@ -8,14 +8,14 @@
         android:id="@+id/app_bar_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/color_black"
+        app:theme="@style/ToolBarTheme"
         android:orientation="vertical">
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:layout_width="match_parent"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:expandedTitleTextAppearance="@color/color_white"
-            app:collapsedTitleTextAppearance="@color/color_white"
+            app:layout_scrollFlags="scroll"
+            app:expandedTitleTextAppearance="@style/GreyText"
+            app:collapsedTitleTextAppearance="@style/WhiteText"
             app:contentScrim="?attr/colorPrimary"
             android:fitsSystemWindows="true"
             android:layout_height="250dp">
@@ -26,13 +26,13 @@
                 android:src="@drawable/son"
                 android:layout_width="wrap_content"
                 android:layout_height="250dp" />
+
             <android.support.v7.widget.Toolbar
                 android:id="@+id/tool_bar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
-                app:title="@string/simple_text_name"
-                app:titleTextColor="@color/color_white" />
+                app:title="@string/simple_text_name" />
 
         </android.support.design.widget.CollapsingToolbarLayout>
 
