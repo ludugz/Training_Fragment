@@ -30,14 +30,20 @@ public class MainActivity extends AppCompatActivity {
 
     @AfterViews
     void updateFragment() {
-
+        // Handle Toolbar
         setSupportActionBar(mToolBar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         // Update DataList for FragmentOne
         updateDataList();
         // Handle ViewPager
         PagerAdapter pagerAdapter = new MyPagerAdapter(getSupportFragmentManager());
         mViewPager.setAdapter(pagerAdapter);
         mTabLayout.setupWithViewPager(mViewPager);
+
+
 
     }
 
